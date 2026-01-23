@@ -49,24 +49,6 @@ body {
     color: #f4f4f4;
 }
 
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-    .navbar .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .navbar .nav-links {
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    .navbar .nav-links li {
-        margin: 0.5rem 0;
-        margin-left: 0;
-    }
-}
-
 /* Carousel Styles */
 .carousel {
     position: relative;
@@ -676,37 +658,6 @@ body {
     display: block;
 }
 
-@media (max-width: 768px) {
-    .advertisement-service {
-        flex-direction: column;
-    }
-    .advertisement-service-image {
-        width: 100%;
-        min-height: 250px;
-    }
-    .media-service {
-        flex-direction: column-reverse;
-    }
-    .media-service-image {
-        width: 100%;
-        min-height: 250px;
-    }
-    .events-service {
-        flex-direction: column;
-    }
-    .events-service-image {
-        width: 100%;
-        min-height: 250px;
-    }
-    .company-branding-service {
-        flex-direction: column-reverse;
-    }
-    .company-branding-service-image {
-        width: 100%;
-        min-height: 250px;
-    }
-}
-
 /* Media Content Section */
 .media-content {
     padding: 5rem 0;
@@ -1050,12 +1001,6 @@ body {
     margin-bottom: 0.2rem;
 }
 
-@media (max-width: 900px) {
-    .events {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* Recent Events Section */
 .recents-events {
     padding: 5rem 0;
@@ -1137,5 +1082,46 @@ body {
     background: #fff;
     color: #333;
 }
-    color: #333;
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+    .services .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .client-logos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .photo-gallery, .recent-events-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .services .container {
+        grid-template-columns: 1fr;
+    }
+    .about-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .client-logos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .video-thumbnails,
+    .photo-gallery,
+    .recent-events-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For Small Mobile Devices */
+@media (max-width: 480px) {
+    .client-logos {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
