@@ -1435,6 +1435,144 @@ body {
     background: #2980b9;
 }
 
+/* Upcoming Events Page Styles */
+.upcomming-events-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.upcomming-events-banner .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.upcomming-events-banner h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.upcomming-events-banner h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.upcomming-events-content {
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+}
+
+.upcomming-events-content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.events-banner-info {
+    background: url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    min-height: 500px;
+    display: flex;
+}
+
+.events-banner-info-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.events-banner-info-overlay h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.timer-countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.events-banner-info-overlay p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.events-banner-info-button {
+    margin-top: 2rem;
+}
+
+.events-banner-info-button a {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.events-banner-info-button a:hover {
+    background: #2980b9;
+}
+
+.upcoming-events-sponsors {
+    padding: 4rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.upcoming-events-sponsors h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.sponsors-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.sponsors-logos img {
+    max-height: 60px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.sponsors-logos img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
 /* =========================================
    Responsive Design
    ========================================= */
@@ -1477,6 +1615,10 @@ body {
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 2rem;
+    }
+    .events-banner-info-overlay {
+        align-items: center;
+        text-align: center;
     }
 }
 
