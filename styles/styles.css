@@ -1490,6 +1490,15 @@ body {
 }
 
 .events-banner-info-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     background: rgba(0, 0, 0, 0.7);
     padding: 3rem;
     color: #fff;
