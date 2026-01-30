@@ -1581,6 +1581,98 @@ body {
     filter: grayscale(0%);
 }
 
+/* Event Story Page Styles */
+.event-story-banner {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.event-story-banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.event-story-banner::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.event-story-banner .container {
+    position: relative;
+    z-index: 3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.event-story-banner h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.event-story-banner h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.event-story-content {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+.event-story-content .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.event-story-videos {
+    text-align: center;
+}
+
+.event-story-videos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.event-story-videos p {
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.event-story-videos video {
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-height: 600px;
+    object-fit: cover;
+    background: #000;
+}
+
 /* =========================================
    Responsive Design
    ========================================= */
